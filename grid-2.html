@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grid-2</title>
+    <style>
+        #green{
+            width: 70%;
+            height: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4,200px);
+            grid-template-rows: repeat(2,150px);
+            gap: 40px;
+        }
+        #green>div{
+            background-color: #444444;
+            color: white;
+            font-size: 40px;
+            padding-left: 20px;
+            padding-top: 50px;
+        }
+        #a{
+            grid-area: 1/span 2;
+        }
+        #b{
+            grid-row: 1/span 2;
+        }
+    </style>
+</head>
+<body>
+    <div id="green">
+        <div id="a">A</div>
+        <div id="b">B</div>
+        <div>C</div>
+        <div>D</div>
+        <div id="b">E</div>
+    </div>
+</body>
+</html>

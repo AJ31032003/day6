@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grid-1</title>
+    <style>
+        #main{
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4,100px);
+            grid-template-rows: repeat(3,100px);
+            width: 60%;
+            height: auto;
+            background-color: #ffffff;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            gap: 20px;
+            justify-content: center;
+    }
+    #main>div{
+        background-color: #444444;
+        color: white;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    #b{
+        grid-column: 3/span 2;
+    }
+    #a{
+        grid-column: 1/span 2;
+    }
+    #d{
+        grid-column: 2/span 3;
+    }
+    #e{
+        grid-column: 1/span 4;
+    }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="a">A</div>
+        <div id="b">B</div>
+        <div>C</div>
+        <div id="d">D</div>
+        <div id="e">E</div>
+    </div>
+</body>
+</html>
